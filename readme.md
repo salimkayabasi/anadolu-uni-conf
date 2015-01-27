@@ -28,7 +28,7 @@ URL Endpoints
 
 ```json
   {
-    date: "2015-01-27T00:43:47.287Z"
+    "date": "2015-01-27T00:43:47.287Z"
   }
 ```
 
@@ -39,10 +39,10 @@ URL Endpoints
 ```json
   [
     {
-      type: "-K-",
-      code: 5,
-      title: "Python ile Web Geliştiriciliği",
-      people: "Fatih Erikli - Halit Alptekin - Emre Yılmaz - Doğan Çecen"
+      "type": "-K-",
+      "code": 5,
+      "title": "Python ile Web Geliştiriciliği",
+      "people": "Fatih Erikli - Halit Alptekin - Emre Yılmaz - Doğan Çecen"
     }
   ]
 ```
