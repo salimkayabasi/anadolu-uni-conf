@@ -14,9 +14,15 @@ exports.schedule = function (req, res, next) {
       return next(new Error('Server Error'));
     }
     var $ = cheerio.load(body);
-    var titles = $('table td a').map(function (i, e) {
-      return $(e).text();
+    var courses = $('table tr').slice(1).map(function (i, e) {
+      var tds = $(e).find('td');
+      return {
+        type: $(tds[0]).text(),
+        code: $(tds[1]).text(),
+        title: $(tds[2]).text(),
+        people: $(tds[3]).text()
+      };
     }).get();
-    return res.json({titles: titles});
+    return res.json(courses);
   });
 };
