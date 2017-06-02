@@ -1,6 +1,8 @@
 Anadolu Uni REST API
 ====================
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/salimkayabasi/anadolu-uni-conf.svg)](https://greenkeeper.io/)
+
 Source project of given site `http://anadolu-uni-conf.herokuapp.com`
 
 Installing
